@@ -18,6 +18,12 @@ report/report.Rmd      report source (includes the script)
 report/report.pdf      rendered report
 ```
 
+## How to read the results
+VaR is the loss that is exceeded only with a small probability (for example 1% or 5%) over one day. Expected Shortfall (ES) is the average loss when that threshold is exceeded. The report compares how these estimates change with the model: Normal, Student-t, generalised hyperbolic, copula-based and extreme-value approaches, the latter ones being designed to capture heavy tails. See `report/report.pdf` for the numbers and conclusions.
+
+## Data
+Daily closing prices of AAPL, GOOG and MSFT from public market data, as provided for the course.
+
 ## How to run
 From the repository root:
 ```r
